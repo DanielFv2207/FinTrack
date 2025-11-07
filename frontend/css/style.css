@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    color: #E8EDF2;
+    font-family: "DM Sans", sans-serif;    
+}
+
+.img-sign-up{
+    width: 40%;
+    height: 100vh;
+    background-color: #4ec47b;
+    background-image: url(../img/signUp-backgound-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color:  #0e1e2b;
+}
+
+.create-account-container{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+
+.input-box{
+    position: relative;
+    height: 60px;
+    width: 500px;
+    margin: 15px 0;
+    
+}
+
+h1{
+    font-size: 3rem;
+    color: #4ec47b;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+    color: #E8EDF2;
+    border-radius: 8px;
+    border-style: solid;
+    padding: 10px;
+    border-color: #E8EDF2;
+}
+
+.input-box label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 16px;
+    color: #38b16e;
+    background-color: #0E1E2B;
+    padding: 0 5px;
+}
+
+.create-account-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
