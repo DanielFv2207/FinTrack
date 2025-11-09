@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #0E1E2B inset; /* color de fondo que usas */
+  -webkit-text-fill-color: #E8EDF2; /* color del texto */
+  transition: background-color 5000s ease-in-out 0s; /* evita parpadeo */
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0E1E2B inset;
+  -webkit-text-fill-color: #E8EDF2;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -23,21 +35,19 @@ body{
 }
 
 .sign-up{
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    
     background-color:  #0e1e2b;
 }
 
 .create-account-container{
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-    
 }
 
 .input-box{
@@ -62,7 +72,7 @@ h1{
     border-radius: 8px;
     border-style: solid;
     padding: 10px;
-    border-color: #E8EDF2;
+    border-color: #9fb1c2;
 }
 
 .input-box label {
@@ -80,4 +90,80 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.btn-sign-up{
+    height: 60px;
+    width: 100%;
+    background-color: #38b16e;
+    border-radius: 8px;
+    border-style: solid;
+    cursor: pointer;
+    color: #0e1e2b;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-sign-up:hover{
+     box-shadow: 0 4px 10px black;
+     transform: scale(1.01);
+     background-color: #4ec47b;
+}
+
+.login{
+    color: #4ec47b;
+}
+
+.already{
+    margin-top: 25px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+  color: #9fb1c2; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.separator span {
+  margin: 0 12px;
+}
+
+.google-btn{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #E8EDF2;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.google-btn:hover{
+    box-shadow: 0 4px 10px black;
+     transform: scale(1.01);
+     background-color: rgba(255, 255, 255, 0.1);
 }
